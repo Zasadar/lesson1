@@ -4,8 +4,7 @@
     {
         static void Main(string[] args)
         {
-            string myName;
-            myName = "Max";
+            const string myName = "Максим";
             Console.WriteLine(myName);
             Console.ReadKey();
         }
