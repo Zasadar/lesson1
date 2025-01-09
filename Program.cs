@@ -7,7 +7,7 @@
             string myName;
             myName = "Max";
             Console.WriteLine(myName);
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
