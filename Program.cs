@@ -4,27 +4,15 @@
     {
         static void Main(string[] args)
         {
-            const string MyName = "Максим";
-            Console.WriteLine(MyName);
+            string MyName = "Максим";
+            byte MyAge = 27;
+            bool HavePet = false;
+            double Size = 42.5;
 
-            Console.WriteLine("\t Hello World!");
-            Console.WriteLine("\t Мне 35 лет");
-            Console.WriteLine("\t My name is \n Max");
-
-            Console.WriteLine('\u0040');
-            Console.WriteLine('\x23');
-
-            Console.WriteLine(0x0A);
-            Console.WriteLine(0b11);
-            Console.WriteLine(5.5);
-
-            Console.WriteLine(true);
-            Console.WriteLine(false);
-
-            Console.WriteLine(5);
-
-            Console.WriteLine("Пора спать!");
-
+            Console.WriteLine("Hello World!");
+            Console.WriteLine("Меня зовут " + MyName);
+            Console.WriteLine("У тебя есть домашний питомец? " + HavePet);
+            Console.WriteLine("Мой размер обуви " + Size);
             Console.ReadKey();
         }
     }
