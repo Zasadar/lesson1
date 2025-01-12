@@ -7,35 +7,14 @@ namespace lesson1
     {
         static void Main(string[] args)
         {
-            string MyName = "Максим";
-            byte MyAge = 27;
-            bool HavePet = false;
-            double Size = 43.0;
-
-            Console.WriteLine("Hello World!");
-            Console.WriteLine("Меня зовут " + MyName);
-            Console.WriteLine("У тебя есть домашний питомец? " + HavePet);
-            Console.WriteLine("Мой размер обуви " + Size);
-            
-            Console.WriteLine("\nIntMin {0}", int.MinValue);
-            Console.WriteLine("IntMax {0}", int.MaxValue);
-
             Console.WriteLine("Как вас зовут?");
-            var name = Convert.ToString(Console.ReadLine());
-
-            var age = checked((byte)int.Parse(Console.ReadLine()));
-            Console.WriteLine("Your name is {0} and age is {1} ", name, age);
-
-            Console.Write("What is your favorite day of week? ");
-
-            var day = (DayOfWeek)int.Parse(Console.ReadLine());
-            Console.WriteLine("Your favorite day is {0}", day);
-
+            var name = Console.ReadLine();
+            Console.WriteLine("Сколько вам лет?");
+            var age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Дата Вашего рождения? (в формате дд.мм.гггг)");
+            var date = Console.ReadLine();
+            Console.WriteLine("Ваше имя {0}, Вам {1} лет, дата Вашего рождения: {2}", name, age, date);
             Console.ReadKey();
-        }
-        enum Semaphore
-        {
-            Read = 100, yellow = 200, green = 300
         }
     }
 }
