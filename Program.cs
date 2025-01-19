@@ -10,9 +10,9 @@ namespace lesson1
         {
             Console.WriteLine("Напишите совй любимый цвет на английском с маленькой буквы");
 
-            for (int i = 1; i < 5; i++)
+            for (; ; )
             {
-                Console.WriteLine("Итерация {0}", i);
+                
                 switch (Console.ReadLine())
                 {
                     case "red":
