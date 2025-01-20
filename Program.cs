@@ -12,13 +12,17 @@ namespace lesson1
 
             while (true)
             {
-                                Console.WriteLine("Напишите совй любимый цвет на английском с маленькой буквы");
+                Console.BackgroundColor = ConsoleColor.Black;
+                Console.ForegroundColor = ConsoleColor.White;
+                Console.WriteLine("Напишите совй любимый цвет на английском с маленькой буквы");
                 Console.WriteLine(k);
                 var text = Console.ReadLine();
                 if (text == "stop")
                 {
+                    Console.WriteLine("Цикл остановлен");
                     break;
                 }
+                k++;
                 switch (text)
                 {
                     case "red":
@@ -40,12 +44,10 @@ namespace lesson1
                         break;
 
                     default:
-                        Console.BackgroundColor = ConsoleColor.Yellow;
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Ваш цвет желтый!");
-                        break;
+                        continue;
                 }
-                k++;   
+                
+
             }
 
 
