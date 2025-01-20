@@ -9,9 +9,11 @@ namespace lesson1
         static void Main(string[] args)
         {
             Console.WriteLine("Напишите совй любимый цвет на английском с маленькой буквы");
-
-            for (; ; )
+            int k = 0;
+            while (k < 3)
             {
+                Console.WriteLine(k); 
+                k++;
                 
                 switch (Console.ReadLine())
                 {
