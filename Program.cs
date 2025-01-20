@@ -8,14 +8,18 @@ namespace lesson1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Напишите совй любимый цвет на английском с маленькой буквы");
+            int k = 0;
 
-            int t = 0;
-
-            do
+            while (true)
             {
-                Console.WriteLine(t);
-                switch (Console.ReadLine())
+                                Console.WriteLine("Напишите совй любимый цвет на английском с маленькой буквы");
+                Console.WriteLine(k);
+                var text = Console.ReadLine();
+                if (text == "stop")
+                {
+                    break;
+                }
+                switch (text)
                 {
                     case "red":
                         Console.BackgroundColor = ConsoleColor.Red;
@@ -41,8 +45,8 @@ namespace lesson1
                         Console.WriteLine("Ваш цвет желтый!");
                         break;
                 }
-                t++;
-            }while (t < 3);
+                k++;   
+            }
 
 
         }
