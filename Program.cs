@@ -9,12 +9,12 @@ namespace lesson1
         static void Main(string[] args)
         {
             Console.WriteLine("Напишите совй любимый цвет на английском с маленькой буквы");
-            int k = 0;
-            while (k < 3)
+
+            int t = 0;
+
+            do
             {
-                Console.WriteLine(k); 
-                k++;
-                
+                Console.WriteLine(t);
                 switch (Console.ReadLine())
                 {
                     case "red":
@@ -41,7 +41,8 @@ namespace lesson1
                         Console.WriteLine("Ваш цвет желтый!");
                         break;
                 }
-            }
+                t++;
+            }while (t < 3);
 
 
         }
